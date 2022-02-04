@@ -1,0 +1,108 @@
+lib.navigationDefault {
+  dataProcessing {
+    10 = FriendsOfTYPO3\Headless\DataProcessing\MenuProcessor
+    10 {
+      special = rootline
+      special.value = -8
+      levels = 7
+      expandAll = 1
+      includeSpacer = 0
+      titleField = nav_title // title
+      as = navigation
+
+      dataProcessing {
+        10 = FriendsOfTYPO3\Headless\DataProcessing\FilesProcessor
+        10 {
+          references.fieldName = nav_icon
+          as = nav_icon
+        }
+      }
+    }
+  }
+}
+
+lib.navigations {
+  fields {
+    navigation1 < lib.navigationDefault
+    navigation2 < lib.navigationDefault
+    navigation3 < lib.navigationDefault
+    breadcrumbs < lib.navigationDefault
+
+    navigation1.dataProcessing.10 {
+      as = navigation1
+      special = {$page.navigations.navigation1.navigationType}
+      special.value = {$page.navigations.navigation1.navigationValue}
+      entryLevel = {$page.navigations.navigation1.entryLevel}
+      expandAll = {$page.navigations.navigation1.expandAll}
+      includeNotInMenu = {$page.navigations.navigation1.includeNotInMenu}
+      includeSpacer = {$page.navigations.navigation1.includeSpacer}
+      levels = {$page.navigations.navigation1.levels}
+    }
+
+    navigation2.dataProcessing.10 {
+      as = navigation2
+      special = {$page.navigations.navigation2.navigationType}
+      special.value = {$page.navigations.navigation2.navigationValue}
+      entryLevel = {$page.navigations.navigation2.entryLevel}
+      expandAll = {$page.navigations.navigation2.expandAll}
+      includeNotInMenu = {$page.navigations.navigation2.includeNotInMenu}
+      includeSpacer = {$page.navigations.navigation2.includeSpacer}
+      levels = {$page.navigations.navigation2.levels}
+    }
+
+    navigation3.dataProcessing.10 {
+      as = navigation3
+      special = {$page.navigations.navigation3.navigationType}
+      special.value = {$page.navigations.navigation3.navigationValue}
+      entryLevel = {$page.navigations.navigation3.entryLevel}
+      expandAll = {$page.navigations.navigation3.expandAll}
+      includeNotInMenu = {$page.navigations.navigation3.includeNotInMenu}
+      includeSpacer = {$page.navigations.navigation3.includeSpacer}
+      levels = {$page.navigations.navigation3.levels}
+    }
+
+    breadcrumbs.dataProcessing.10 {
+      as = breadcrumbs
+      special = rootline
+      special.range = 0|-1
+      expandAll = 0
+
+      includeSpacer = 1
+      includeNotInMenu = 1
+      if {
+        value = {$page.theme.breadcrumb.enableLevel}
+        value {
+          insertData = 1
+          prioriCalc = 1
+          stdWrap.wrap = |-1
+        }
+
+        isGreaterThan {
+          data = level
+        }
+      }
+    }
+
+    languages = JSON
+    languages {
+      dataProcessing {
+        10 = TYPO3\CMS\Frontend\DataProcessing\LanguageMenuProcessor
+        10 {
+          as = languagenavigation
+          languages = {$page.navigations.languages.languageValue}
+        }
+      }
+    }
+  }
+}
+
+lib.navigations = JSON
+lib.navigations.navigation1 = JSON
+lib.navigations.navigation2 = JSON
+lib.navigations.navigation3 = JSON
+
+page.10.fields.breadcrumbs >
+page.10.fields.navigations =< lib.navigations
+menu.10 >
+menu.10 =< lib.navigations
+page.10.fields.languages >
