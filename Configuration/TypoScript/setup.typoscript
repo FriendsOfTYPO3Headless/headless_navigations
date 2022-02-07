@@ -26,7 +26,6 @@ lib.navigations {
     navigation1 < lib.navigationDefault
     navigation2 < lib.navigationDefault
     navigation3 < lib.navigationDefault
-    breadcrumbs < lib.navigationDefault
 
     navigation1.dataProcessing.10 {
       as = navigation1
@@ -60,39 +59,6 @@ lib.navigations {
       includeSpacer = {$page.navigations.navigation3.includeSpacer}
       levels = {$page.navigations.navigation3.levels}
     }
-
-    breadcrumbs.dataProcessing.10 {
-      as = breadcrumbs
-      special = rootline
-      special.range = 0|-1
-      expandAll = 0
-
-      includeSpacer = 1
-      includeNotInMenu = 1
-      if {
-        value = {$page.theme.breadcrumb.enableLevel}
-        value {
-          insertData = 1
-          prioriCalc = 1
-          stdWrap.wrap = |-1
-        }
-
-        isGreaterThan {
-          data = level
-        }
-      }
-    }
-
-    languages = JSON
-    languages {
-      dataProcessing {
-        10 = TYPO3\CMS\Frontend\DataProcessing\LanguageMenuProcessor
-        10 {
-          as = languagenavigation
-          languages = {$page.navigations.languages.languageValue}
-        }
-      }
-    }
   }
 }
 
@@ -101,8 +67,6 @@ lib.navigations.navigation1 = JSON
 lib.navigations.navigation2 = JSON
 lib.navigations.navigation3 = JSON
 
-page.10.fields.breadcrumbs >
 page.10.fields.navigations =< lib.navigations
 menu.10 >
 menu.10 =< lib.navigations
-page.10.fields.languages >

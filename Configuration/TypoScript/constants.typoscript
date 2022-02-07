@@ -1,58 +1,58 @@
 page {
   navigations {
     navigation1 {
-      # cat=bootstrap package: navigations/100/navigation1_navigationValue; type=string; label=Navigation1 Values: Comma separated list of page uids
+      # cat=headless navigations/100/navigation1_navigationValue; type=string; label=Navigation1 Values: Comma separated list of page uids
       navigationValue =
-      # cat=bootstrap package: navigations/100/navigation1_navigationType; type=options[Directory=directory, List=list]; label=Navigation1 Type
+      # cat=headless navigations/100/navigation1_navigationType; type=options[Directory=directory, List=list]; label=Navigation1 Type
       navigationType = directory
-      # cat=bootstrap package: navigations/100/navigation1_includeNotInMenu; type=boolean; label=Navigation1 include items not in menu
+      # cat=headless navigations/100/navigation1_includeNotInMenu; type=boolean; label=Navigation1 include items not in menu
       includeNotInMenu = 0
-      # cat=bootstrap package: navigations/100/navigation1_expandAll; type=boolean; label=Navigation1 expandAll
+      # cat=headless navigations/100/navigation1_expandAll; type=boolean; label=Navigation1 expandAll
       expandAll = 1
-      # cat=bootstrap package: navigations/100/navigation1_entryLevel; type=int; label=Navigation1 entry level
+      # cat=headless navigations/100/navigation1_entryLevel; type=int; label=Navigation1 entry level
       entryLevel =
-      # cat=bootstrap package: navigations/100/navigation1_includeSpacer; type=boolean; label=Navigation1 include spacer
+      # cat=headless navigations/100/navigation1_includeSpacer; type=boolean; label=Navigation1 include spacer
       includeSpacer = 1
-      # cat=bootstrap package: navigations/100/navigation1_levels; type=int+; label=Navigation1 levels
+      # cat=headless navigations/100/navigation1_levels; type=int+; label=Navigation1 levels
       levels =
     }
 
     navigation2 {
-      # cat=bootstrap package: navigations/101/navigation2_navigationValue; type=string; label=Navigation2 Values: Comma separated list of page uids
+      # cat=headless navigations/101/navigation2_navigationValue; type=string; label=Navigation2 Values: Comma separated list of page uids
       navigationValue =
-      # cat=bootstrap package: navigations/101/navigation2_navigationType; type=options[Directory=directory, List=list]; label=Navigation2 Type
+      # cat=headless navigations/101/navigation2_navigationType; type=options[Directory=directory, List=list]; label=Navigation2 Type
       navigationType = directory
-      # cat=bootstrap package: navigations/101/navigation2_includeNotInMenu; type=boolean; label=Navigation2 include items not in menu
+      # cat=headless navigations/101/navigation2_includeNotInMenu; type=boolean; label=Navigation2 include items not in menu
       includeNotInMenu = 0
-      # cat=bootstrap package: navigations/101/navigation2_expandAll; type=boolean; label=Navigation2 expandAll
+      # cat=headless navigations/101/navigation2_expandAll; type=boolean; label=Navigation2 expandAll
       expandAll = 1
-      # cat=bootstrap package: navigations/101/navigation2_entryLevel; type=int; label=Navigation2 entry level
+      # cat=headless navigations/101/navigation2_entryLevel; type=int; label=Navigation2 entry level
       entryLevel =
-      # cat=bootstrap package: navigations/101/navigation2_includeSpacer; type=boolean; label=Navigation2 include spacer
+      # cat=headless navigations/101/navigation2_includeSpacer; type=boolean; label=Navigation2 include spacer
       includeSpacer = 1
-      # cat=bootstrap package: navigations/101/navigation2_levels; type=int+; label=Navigation2 levels
+      # cat=headless navigations/101/navigation2_levels; type=int+; label=Navigation2 levels
       levels =
     }
 
     navigation3 {
-      # cat=bootstrap package: navigations/102/navigation3_navigationValue; type=string; label=Navigation3 Values: Comma separated list of page uids
+      # cat=headless navigations/102/navigation3_navigationValue; type=string; label=Navigation3 Values: Comma separated list of page uids
       navigationValue =
-      # cat=bootstrap package: navigations/102/navigation3_navigationType; type=options[Directory=directory, List=list]; label=Navigation3 Type
+      # cat=headless navigations/102/navigation3_navigationType; type=options[Directory=directory, List=list]; label=Navigation3 Type
       navigationType = directory
-      # cat=bootstrap package: navigations/103/navigation3_includeNotInMenu; type=boolean; label=Navigation3 include items not in menu
+      # cat=headless navigations/103/navigation3_includeNotInMenu; type=boolean; label=Navigation3 include items not in menu
       includeNotInMenu = 0
-      # cat=bootstrap package: navigations/103/navigation3_expandAll; type=boolean; label=Navigation3 expandAll
+      # cat=headless navigations/103/navigation3_expandAll; type=boolean; label=Navigation3 expandAll
       expandAll = 1
-      # cat=bootstrap package: navigations/103/navigation3_entryLevel; type=int; label=Navigation3 entry level
+      # cat=headless navigations/103/navigation3_entryLevel; type=int; label=Navigation3 entry level
       entryLevel =
-      # cat=bootstrap package: navigations/103/navigation3_includeSpacer; type=boolean; label=Navigation3 include spacer
+      # cat=headless navigations/103/navigation3_includeSpacer; type=boolean; label=Navigation3 include spacer
       includeSpacer = 1
-      # cat=bootstrap package: navigations/103/navigation3_levels; type=int+; label=Navigation3 levels
+      # cat=headless navigations/103/navigation3_levels; type=int+; label=Navigation3 levels
       levels =
     }
 
     languages {
-      # cat=bootstrap package: navigations/104/languages_languageValue; type=string; label=Language Navigation Values: Comma separated list of language uids or set to 'auto' to load all enabled system languages
+      # cat=headless navigations/104/languages_languageValue; type=string; label=Language Navigation Values: Comma separated list of language uids or set to 'auto' to load all enabled system languages
       languageValue = auto
     }
   }
