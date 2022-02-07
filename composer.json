@@ -13,10 +13,10 @@
     "GPL-2.0-or-later"
   ],
   "require": {
-    "typo3/cms-core": "^11.5"
+    "typo3/cms-core": "^10.4 || ^11.5"
   },
   "suggest": {
-    "friendsoftypo3/headless": "^2.0"
+    "friendsoftypo3/headless": "^2.0 || ^3.0"
   },
   "extra": {
     "typo3/cms": {

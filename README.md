@@ -5,7 +5,7 @@ This extension adds a "navigations" key to the default JSON response, provides c
 ![Navigations array in default response](Documentation/response.png)
 
 ## Requirements
-Extension requires TYPO3 in version at least 11.5.
+Extension requires TYPO3 in version at least 10.4.
 
 ## TYPO3 Installation
 Install extension using composer\
