@@ -1,3 +1,6 @@
+[![TYPO3 11](https://img.shields.io/badge/TYPO3-11-orange.svg)](https://get.typo3.org/version/11)
+[![TYPO3 10](https://img.shields.io/badge/TYPO3-10-orange.svg)](https://get.typo3.org/version/10)
+
 # TYPO3 Extension "headless_navigations" - Provides TypoScript definitions to enrich the [EXT:headless](https://github.com/TYPO3-Initiatives/headless) page response with proper navigations
 
 This extension adds a "navigations" key to the default JSON response, provides constants to configure up to three custom navigations (e.g. "Main Navigation", "Meta navigation", "Side navigation") and outputs those as proper JSON to render menus in the Frontend applicaiton.
