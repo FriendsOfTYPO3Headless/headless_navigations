@@ -9,14 +9,6 @@ lib.navigationDefault {
       includeSpacer = 0
       titleField = nav_title // title
       as = navigation
-
-      dataProcessing {
-        10 = FriendsOfTYPO3\Headless\DataProcessing\FilesProcessor
-        10 {
-          references.fieldName = nav_icon
-          as = nav_icon
-        }
-      }
     }
   }
 }
